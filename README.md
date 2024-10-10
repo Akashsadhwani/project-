@@ -1,5 +1,7 @@
 # Play store applications 
-Introduction
+
+ # Introduction
+
 The CSV file contains data about various applications, likely from the Google Play Store. Here’s a summary that can be used for presentation purposes:
 Dataset Overview:
 
@@ -22,7 +24,11 @@ Key Columns:
     Android Ver: The minimum Android version required to run the app.
     Date Columns: Includes day, month, and year, possibly indicating when the data was collected.
 
-Example of Applications:
+# source of the dataset
+
+The dataset is download from a websiter (https://www.kaggle.com/). The primary dataset used for the analysis is the [google_cleaned (2).xlsx](https://github.com/user-attachments/files/17327013/google_cleaned.2.xlsx) containes detailed information about the application available in the Play Store.
+
+# Example of Applications:
 
     Photo Editor & Candy Camera & Grid & ScrapBook:
         Category: Art & Design
@@ -38,24 +44,35 @@ Example of Applications:
         Price: Free
         Content Rating: Teen
 
-Insights for Presentation:
+# Tools 
 
-    Popular Categories: Art & Design appears prominently in the dataset.
-    High Install Counts: Some apps have over 50 million installs, showing their popularity.
-    Free vs Paid: Most apps are free, with pricing data available for paid ones.
-    Content Ratings: Helps determine the target audience of the apps.
+>  Excel , Power query for cleaning 
+>  Mysql for data analysis
+>  PowerBi for visualization
 
-Question which where answer :
+# Data cleaning/preparation
 
-1 no of apps paid and non paid ?
-2 no of apps get installed in paricular year in number ?
-3 rating of genres and content rating ?
-4 rating of genres and content by everyone , adults , under18  and unrated ?
-5 scatter plot realtion analysis of piad or free application with review on application ?
+ 1 data loading and inspecting
+ 2 Handling missing values 
+ 3 data cleaning and formatting 
 
- this are some basic question which were answer in this project and preseted through report, charts,graphs ect.
+# Exploratary data analysis on 
 
- brief answer to the question are as follow 
+ 1 No of apps paid and non paid ?.
+
+ 2 No of apps get installed in paricular year in number ?.
+ 
+ 3 Rating of genres and content rating ?.
+ 
+ 4 Rating of genres and content by everyone , adults , under18  and unrated ?.
+ 
+ 5 Scatter plot realtion analysis of piad or free application with review on application ?
+
+
+ # result of the EDA 
+ 
+In this project and preseted through report, charts,graphs ect.
+
 1 from 10.84k ( 92.62 percentage of applications were free or 10040 applications were free and 800 were paid which is 7.38 percent from 100 percent)
 
 2 max installation were recorded in 2018 
@@ -70,6 +87,23 @@ and
  4 tools , entertainment, education were  the top categories on the basis of reviews by everyone .
 
  5 free appication had less reviews as comparied to the paid one it might be because it free availability or because of the fact the money is involved people are more to give it a review on the bais of thier satisfaction .
+
+ # Insights for Presentation:
+
+    Popular Categories: Art & Design appears prominently in the dataset.
+    High Install Counts: Some apps have over 50 million installs, showing their popularity.
+    Free vs Paid: Most apps are free, with pricing data available for paid ones.
+    Content Ratings: Helps determine the target audience of the apps.
+
+# Data Analysis 
+
+here are some of the code/ feature working with :
+
+select count(app) as installs from morality.'google_cleaned (2)';
+
+
+
+
 
 
 
